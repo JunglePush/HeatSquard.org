@@ -40,19 +40,30 @@
     color: white;
     font-weight: bolder;
     padding-right: 0%;
+
+    @media screen and (min-width: 900px) {
+        font-size: 4vh;
+    }
+
+    /* mobile settings */
+
+    font-size: 2vh;
 }
 .header span-last {
-
-    font-size: 4vh;
     text-align: center;
     color: white;
     font-weight: bolder;
 
     @media screen and (min-width: 900px) {
         padding-right: 25%;
+        font-size: 4vh;
     }
 
+    /* mobile settings */
+
+    font-size: 2vh;
     padding-right: 0%;
+
 
 }
 
@@ -70,7 +81,7 @@
         font-size: 2vh;
     }
 
-    font-size: 1vh;
+    font-size: 1.5vh;
 }
 
 .header button:hover{
