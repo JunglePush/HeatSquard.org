@@ -89,7 +89,7 @@
     width: 50vh;
 
     @media screen and (min-width: 600px) {
-        transform: translate(180%, -100%);
+        transform: translate(180%, -80%);
     }
 
  
