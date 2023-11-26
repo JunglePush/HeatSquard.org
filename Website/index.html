@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="stylenew.css" />
+    <link rel="stylesheet" href="css/stylenew.css" />
 
     <!-- META -->
 
@@ -37,17 +37,35 @@
 
       <div class="body">
         <h1>
-          HeatSquared
+          HeatSquared:
         </h1>
         <h2>
-          Hey! My name is HeatSquared a professional in LuaU, HTML, Python, JavaScript. <br> I've been coding for the past 4-6 years with a love and desire for coding.
+          I'm HeatSquared, a seasoned <strong>professional</strong> specializing in LuaU, HTML, Python, and JavaScript with a robust coding background spanning 4-6 years. <br> My passion for coding drives my commitment to delivering exceptional results.
         </h2>
 
         <h3>
-          psst, I also do more than just ROBLOX scripting...
+          <strong> When <em>you</em> choose to work with me, <em>you</em> can anticipate:</strong> <br>
+          <br>
+          • <strong>Exceptional Code Quality:</strong> <br> My dedication to excellence ensures that the code I produce is not only functional but also adheres to industry best practices. <br>
+          <br>
+          • <strong>Efficiency and Reliability:</strong> <br> Time is of the essence, and I pride myself on providing fast and reliable services. Your projects will be handled promptly without compromising quality. <br>
+          <br>
+          • <strong>Proven Track Record:</strong> <br> With a portfolio boasting over 50 successfully completed commissions, I bring a wealth of experience to the table. This includes collaboration with both notable individuals and renowned games within the industry. <br>
+
         </h3>
 
-        <div class="body-container">
+        <h3>
+          I value professionalism and approach every task with a positive and solution-oriented mindset. <br> My collaborative nature ensures smooth interactions with clients, making me an ideal candidate for your team.
+        </h3>
+
+        <h4>
+          <Br></Br>
+          Psst, I also do more than just ROBLOX scripting...
+        </h4>
+
+        <button id="apply">Commission Me!</button>
+
+        <!-- <div class="body-container">
             <h1>What I can do!</h1>
             <h2> • Complete Full-Stack</h2>
             <h2> • Datastores, Leaderboards (ROBLOX)</h2>
@@ -69,7 +87,7 @@
           <h1>What I wont do!</h1>
           <h2>I don't entirely know what I can't do, I'll attempt anything.</h2>
           <h2> • Explicit Games</h2>
-        </div>
+        </div> -->
 
         <!-- <div class="footer">
           Footer
@@ -85,6 +103,9 @@
 
     <script>
 
+      function redirect4() {
+        window.location = "pages/apply.html";
+      }
       function redirect2() {
         window.location = "Pricing.html";
       }
@@ -94,6 +115,7 @@
 
       document.getElementById("pricing").addEventListener("click", redirect2);
       document.getElementById("portfolio").addEventListener("click", redirect3);
+      document.getElementById("apply").addEventListener("click", redirect4);
 
     </script>
   </body>
