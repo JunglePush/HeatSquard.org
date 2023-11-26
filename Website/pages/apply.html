@@ -47,26 +47,24 @@
           Please enter your discord username.
         </h3>
 
-        <form action="discord">
-          <input type="text" name="discord" placeholder="Your Discord Username: HeatSquared">
+        <form>
+          <input type="text" name="discord" id="discordForm" placeholder="Your Discord Username: HeatSquared">
         </form>
-
+        
         <h3>
           Please enter your payment type.
         </h3>
-
-
-        <form action="payment">
-          <input type="text" name="payment" placeholder="Your Payment Type: GBP">
+        
+        <form>
+          <input type="text" name="payment" id="paymentForm" placeholder="Your Payment Type: GBP">
         </form>
-
+        
         <h3>
           Please describe what you want in detail.
         </h3>
-
-
-        <form-desc action="description">
-          <textarea name="" id="" cols="30" rows="10" placeholder="Description of what you want in detail"></textarea>
+        
+        <form-desc>
+          <textarea name="description" id="descriptionForm" cols="30" rows="10" placeholder="Description of what you want in detail"></textarea>
         </form-desc>
 
 
@@ -89,7 +87,13 @@
     <script>
 
       function send() {
-        console.log("Send")
+        const descriptionValue = document.getElementById('descriptionForm').value;
+        const discordValue = document.getElementById('discordForm').value;
+        const paymentValue = document.getElementById('paymentForm').value;
+
+        const data = [discordValue, paymentValue, descriptionValue]
+
+        console.log(data)
       }
 
       function redirect2() {
