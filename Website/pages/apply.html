@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../css/stylenew.css" />
+
+    <!-- META -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="HeatSquared's Portfolio" />
+    <meta
+      property="og:description"
+      content="Pricing, examples, terms and more!"
+    />
+    <meta property="og:url" content="https://heatsquared.org" />
+    <meta
+      property="og:image"
+      content="https://media.discordapp.net/attachments/1156580013513134090/1178350448483246211/YT_Logo.png?ex=6575d35f&is=65635e5f&hm=c228b3b391bd411e566b10c349051cd6591ab93e9b26a6226eee58101dd98d4c&=&format=webp&width=701&height=701"
+    />
+    <meta name="theme-color" content="#fea800" />
+    <!--  -->
+    <title>HeatSquared's Portfolio</title>
+  </head>
+  <body>
+    <div class="base">
+      <div class="header">
+        <span style="color: #0096ff"> &lt </span
+        ><span><em>HeatSquared</em></span
+        ><span-last style="color: #0096ff"> &gt; </span-last>
+
+        <button-selected id="aboutme">About Me</button>
+        <button id="pricing">Pricing & Terms</button>
+        <button id="portfolio">Portfolio</button>
+      </div>
+
+      <div class="body">
+        <h1>
+          Apply:
+        </h1>
+        <h2>
+          Hey! Before you get started, thank you for choosing me, you wont regret it, see you soon.
+        </h2>
+
+        <h3>
+          Please enter your discord username.
+        </h3>
+
+        <form>
+          <input type="text" name="discord" id="discordForm" placeholder="Your Discord Username: HeatSquared">
+        </form>
+        
+        <h3>
+          Please enter your payment type.
+        </h3>
+        
+        <form>
+          <input type="text" name="payment" id="paymentForm" placeholder="Your Payment Type: GBP">
+        </form>
+        
+        <h3>
+          Please describe what you want in detail.
+        </h3>
+        
+        <form-desc>
+          <textarea name="description" id="descriptionForm" cols="30" rows="10" placeholder="Description of what you want in detail"></textarea>
+        </form-desc>
+
+
+        <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
+        <h3>
+          <!-- I value professionalism and approach every task with a positive and solution-oriented mindset. <br> My collaborative nature ensures smooth interactions with clients, making me an ideal candidate for your team. -->
+        </h3>
+
+        <h4>
+          <Br></Br>
+          <!-- Psst, I also do more than just ROBLOX scripting... -->
+        </h4>
+
+        <button id="send">Send</button>
+      </div>
+    </div>
+
+
+
+    <script>
+
+      function send() {
+        const descriptionValue = document.getElementById('descriptionForm').value;
+        const discordValue = document.getElementById('discordForm').value;
+        const paymentValue = document.getElementById('paymentForm').value;
+
+        const data = [discordValue, paymentValue, descriptionValue]
+
+        console.log(data)
+      }
+
+      function redirect2() {
+        window.location = "Pricing.html";
+      }
+      function redirect3() {
+        window.location = "Portfolio.html";
+      }
+
+      document.getElementById("pricing").addEventListener("click", redirect2);
+      document.getElementById("portfolio").addEventListener("click", redirect3);
+      document.getElementById("send").addEventListener("click", send)
+
+    </script>
+  </body>
+</html>
+
+<!-- <div class="bg-image"></div>
+    
+    <div class="container center">
+      <div class="content">
+        <h1>
+          <span style="color: #0096ff">&lt;</span>HeatSquared<span
+            style="color: #0096ff"
+            >&gt;</span
+          >
+        </h1>
+        <p>Specalizing_In = ["LuaU", "Python", "Html", "JavaScript"]</p>
+
+        <h2>
+          Pricing: <br />
+          ROBUX: 100R$ - 100,000R$ <br />
+          PayPal: £5 - £1,000 <br />
+          GiftCards: £5 - £1,000
+        </h2>
+
+        <h2-right>
+          Terms: <br />
+          30 Day guarantee of bug fixing code I created<br />
+          Payment must be what is listed<br />
+          I <em>will not</em> take percentage<br />
+        </h2-right>
+
+        <p>PORTFOLIO</p>
+
+        <p>VIDEO</p>
+        <p>VIDEO</p>
+        <p>VIDEO</p>
+        <p>VIDEO</p>
+        <p>VIDEO</p>
+
+        <button id="redirectButton">Redirect</button>
+        
+      </div>
+    </div> -->
+
+<!-- <style>
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      float: left;
+      margin-right: 10px;
+    }
+
+    .username {
+      font-weight: bold;
+    }
+  </style> -->
