@@ -67,6 +67,22 @@
           <textarea name="description" id="descriptionForm" cols="30" rows="10" placeholder="Description of what you want in detail"></textarea>
         </form-desc>
 
+        <div id="sendPrompt" class="modal">
+          <div class="modal-content">
+            <h1>Message Recieved!</h1>
+            <h2>Thank you for hiring me, please be patient.</h2>
+ 
+            <h3>I will message you soon or you can join the discord @  <a href="https://discord.gg/XfZQ3vsupz" target="_blank" rel="noopener noreferrer">Heat² ©</a> </h3>
+            <h4>See you soon!</h4>
+
+            <button id="closePrompt">Accept</button>
+
+          </div>
+        </div>
+
+
+        <!-- <div id="overlay"></div> -->
+
 
         <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
         <h3>
@@ -85,6 +101,9 @@
 
 
     <script>
+      var sendPrompt = document.getElementById("sendPrompt");
+      var closePrompt = document.getElementById("closePrompt");
+      // var sendPromptClose = document.getElementById("myBtn");
 
       function send() {
         const url = 'https://heatsquared.pythonanywhere.com/aopsfhjauibwopausofna';
@@ -110,6 +129,11 @@
         };
 
         fetch(url, options)
+        sendPrompt.style.display = "block";
+      }
+
+      function closePromptElement() {
+        sendPrompt.style.display = "none";
       }
 
       function redirect2() {
@@ -122,6 +146,8 @@
       document.getElementById("pricing").addEventListener("click", redirect2);
       document.getElementById("portfolio").addEventListener("click", redirect3);
       document.getElementById("send").addEventListener("click", send)
+
+      closePrompt.addEventListener("click", closePromptElement)
 
     </script>
   </body>
