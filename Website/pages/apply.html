@@ -87,13 +87,33 @@
     <script>
 
       function send() {
+        const url = 'https://heatsquared.pythonanywhere.com/aopsfhjauibwopausofna';
+
         const descriptionValue = document.getElementById('descriptionForm').value;
         const discordValue = document.getElementById('discordForm').value;
         const paymentValue = document.getElementById('paymentForm').value;
 
         const data = [discordValue, paymentValue, descriptionValue]
 
-        console.log(data)
+        const options = {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json' // Set the content type based on your data
+            // You can add other headers if needed
+          },
+          body: JSON.stringify(data) // Convert data to JSON format
+        };
+
+        fetch(url, options)
+        .then(response => response.json())
+        .then(data => {
+          // Handle the response data
+          console.log('Response:', data);
+        })
+        .catch(error => {
+          // Handle errors
+          console.error('Error:', error);
+        });
       }
 
       function redirect2() {
