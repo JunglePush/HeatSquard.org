@@ -93,7 +93,12 @@
         const discordValue = document.getElementById('discordForm').value;
         const paymentValue = document.getElementById('paymentForm').value;
 
-        const data = [discordValue, paymentValue, descriptionValue]
+        const data = {
+          discordValue: discordValue,
+          paymentValue: paymentValue,
+          descriptionValue: descriptionValue
+        };
+
 
         const options = {
           method: 'POST',
@@ -105,10 +110,9 @@
         };
 
         fetch(url, options)
-        .then(response => response.json())
-        .then(data => {
-          // Handle the response data
-          console.log('Response:', data);
+        .then(response => {
+          // Handle the response if needed
+          console.log('Response:', response);
         })
         .catch(error => {
           // Handle errors
